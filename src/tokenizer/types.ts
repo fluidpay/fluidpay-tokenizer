@@ -9,7 +9,6 @@ export interface Settings {
   shipping?: Partial<ShippingSettings>
   billing?: Partial<BillingSettings>
   paay?: Partial<PaaySettings>
-  bypassReject?: Partial<PaaySettings>
 }
 
 export interface PaaySettings {
