@@ -15,6 +15,7 @@ export interface PaaySettings {
   sandbox: boolean
   forceDisabled: boolean
   rejectChallenges: string[]
+  bypassReject: boolean
 }
 
 export interface UserSettings {
