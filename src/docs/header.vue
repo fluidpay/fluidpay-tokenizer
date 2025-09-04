@@ -4,8 +4,6 @@ export default defineComponent({})
 </script>
 
 <style lang="scss">
-  @import './assets/scss/_variables.scss';
-
   .header {
     display: flex;
     flex-direction: column;
@@ -14,15 +12,15 @@ export default defineComponent({})
     .title {
       font-size: 42px;
       font-weight: bold;
-      color: $color-white;
+      color: var(--color-white);
       text-align: center;
-      padding: $spacing-half 0 $spacing-quarter 0;
+      padding: var(--spacing-half) 0 var(--spacing-quarter) 0;
     }
 
     .menu {
       display: flex;
       flex-direction: column;
-      padding: $spacing $spacing 0 $spacing;
+      padding: var(--spacing) var(--spacing) 0 var(--spacing);
 
       .row{
         display: flex;
@@ -30,10 +28,10 @@ export default defineComponent({})
         justify-content: center;
 
         a {
-          color: $color-white;
+          color: var(--color-white);
           font-size: 16px;
           font-weight: bold;
-          margin: 0 $spacing-half $spacing-half $spacing-half;
+          margin: 0 var(--spacing-half) var(--spacing-half) var(--spacing-half);
         }
       }
     }

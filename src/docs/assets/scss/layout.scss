@@ -1,11 +1,11 @@
 html {height: 100%; min-height: 100%;}
 body {
   height: 100%;
-  font-family: $font-family;
-  font-size: $font-size;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
   -webkit-font-smoothing: antialiased;
-  color: $color-font;
-  background-color: $color-background;
+  color: var(--color-font);
+  background-color: var(--color-background);
   padding: 0;
   margin: 0;
   overflow: auto;
@@ -29,8 +29,8 @@ body {
     .main {
       .section {
         background-color: #ffffff;
-        padding: $spacing;
-        margin: 0 0 $spacing 0;
+        padding: var(--spacing);
+        margin: 0 0 var(--spacing) 0;
       }
     }
   }
