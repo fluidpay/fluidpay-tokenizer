@@ -13,6 +13,7 @@ export interface PaaySettings {
     sandbox: boolean;
     forceDisabled: boolean;
     rejectChallenges: string[];
+    bypassReject: boolean;
 }
 export interface UserSettings {
     showName: boolean;
@@ -47,6 +48,7 @@ export interface PaymentSettings {
     showCVV: boolean;
     card: Partial<{
         strict_mode: boolean;
+        mask_number: boolean;
         requireCVV: boolean;
         user_required: Partial<UserRequiredSettings>;
         billing_required: Partial<BillingRequiredSettings>;

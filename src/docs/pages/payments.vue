@@ -51,6 +51,7 @@ export default defineComponent({
           },
           card: {
             strict_mode: false, // Set to true to allow for 19 digit cards
+            mask_number: true, // Default false - Whether or not to mask card numbers
             requireCVV: true,
 
             // If payment is ach, set speficic user fields to required
@@ -126,6 +127,7 @@ export default defineComponent({
               },
               card: {
                 strict_mode: false, // Set to true to allow for 19 digit cards
+                mask_number: true, // Default false - Whether or not to mask card numbers
                 requireCVV: false,
 
                 // If payment is card set specific billing fields to required
