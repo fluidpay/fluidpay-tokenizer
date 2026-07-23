@@ -90,7 +90,6 @@ export default class Tokenizer {
       // Check if element is in the DOM
       if (!el) {
         throw new Error('Could not find container')
-        return
       }
 
       // Add onload to iframe
@@ -438,8 +437,8 @@ export default class Tokenizer {
           this.updateHeight(data.height)
           break
       }
-    } catch (e) {
-
+    } catch {
+      // ignore messages that aren't valid JSON
     }
   }
 }

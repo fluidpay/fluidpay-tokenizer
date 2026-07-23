@@ -1,5 +1,5 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import typescript from '@rollup/plugin-typescript';
 import { defineConfig } from 'rollup';
 

@@ -50,6 +50,10 @@ export default [
       'no-empty-pattern': 'off',
       'no-new': 'off',
 
+      // Use the TypeScript-aware unused-vars rule (understands type signatures)
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'error',
+
       // Vue
       'vue/multi-word-component-names': 'off'
     }
@@ -88,10 +92,14 @@ export default [
       camelcase: 'off',
       'no-useless-escape': 'off',
       'no-empty-pattern': 'off',
-      'no-new': 'off'
+      'no-new': 'off',
+
+      // Use the TypeScript-aware unused-vars rule (understands type signatures)
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'error'
     }
   },
-  
+
   // JavaScript files
   {
     files: ['**/*.js', '**/*.jsx'],

@@ -316,8 +316,8 @@ class Tokenizer {
     buildIframe() {
         const iframe = document.createElement('iframe');
         iframe.src = this.getApiKeyURL();
-        // Set allow payment request
-        iframe.setAttribute('allow', 'payment');
+        // Set allow payment request + geolocation (used by the fingerprint/fraud script inside the iframe)
+        iframe.setAttribute('allow', 'payment; geolocation');
         // Style
         iframe.style.display = 'block';
         iframe.style.border = 'none';
@@ -385,7 +385,8 @@ class Tokenizer {
                     break;
             }
         }
-        catch (e) {
+        catch {
+            // ignore messages that aren't valid JSON
         }
     }
 }

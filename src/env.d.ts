@@ -13,3 +13,5 @@ declare global {
 
 declare module 'prismjs'
 declare module 'prismjs/*'
+
+declare module '*.scss'

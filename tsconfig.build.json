@@ -16,11 +16,11 @@
     // "noEmit": false,
 
     "outDir": "dist",
+    "rootDir": "./src/tokenizer",
     "declaration": true,
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "tokenizer": ["src/tokenizer"]
+      "tokenizer": ["./src/tokenizer"]
     },
 
     /* Linting */
